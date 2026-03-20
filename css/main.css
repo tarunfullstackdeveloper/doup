@@ -958,13 +958,13 @@ header.siteheader {
   font-size: 18px;
   padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(61, 84, 77, 0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 40px;
   width: 110%;
   position: relative;
   z-index: 1;
-  background: rgba(61, 84, 77, 0.20);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .sustainablecontentinner h2 {
@@ -982,4 +982,111 @@ header.siteheader {
 
 .sustainableboxwrapper .sustainablerow:nth-child(even) .sustainablecontentinner h2 {
   padding-left: 40px;
+}
+
+.contactsectionpg {
+  padding-top: 100px;
+}
+
+.contactsectionpg .titlebox h1 {
+  text-align: center;
+  font-size: 90px;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+.contactseciner {
+  padding: 80px 0;
+}
+
+.contactseciner .col-third {
+  width: 350px;
+}
+
+.contactseciner .row {
+  justify-content: space-between;
+}
+
+.contactseciner .row .iconwithbox {
+  padding: 30px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(61, 84, 77, 0.20);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.contactseciner .row .iconwithbox .content a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  margin: 14px 0;
+}
+
+.contactseciner .row .iconwithbox .content p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.contactseciner .row .iconwithbox .content a.btn.outlinebtn {
+  font-weight: 400 !important;
+  font-family: 'Gilroy' !important;
+  font-size: 18px !important;
+  display: inline-flex;
+  padding: 12px 40px;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.contactpageform {
+  padding-bottom: 160px;
+}
+
+.col-45 {
+  width: 45%;
+}
+
+.contactpagforminner .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candalymeeting img {
+  width: 100%;
+}
+
+.contactrowwrapper {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(61, 84, 77, 0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 48px 70px 65px;
+  border-radius: 40px;
+}
+
+.formwrapper textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  letter-spacing: 0;
+  color: #fff;
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+.contactrowwrapper button.btn.outlinebtn {
+  width: 100% !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+}
+
+.contactrowwrapper .formwrapper:first-child {
+  margin-top: 10px;
 }
