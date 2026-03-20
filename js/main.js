@@ -47,3 +47,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+
+$('.pdimageslider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.pdthumbslider'
+});
+
+$('.pdthumbslider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.pdimageslider',
+  focusOnSelect: true,
+  vertical: true
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const btn = document.querySelector(".readmoreaction .read-more");
+  const reviews = document.querySelectorAll(".reviewcard");
+
+  let currentIndex = 0;
+
+  btn.addEventListener("click", function () {
+
+    // hide current
+    // reviews[currentIndex].classList.remove("active");
+
+    // next index
+    currentIndex++;
+
+    // loop back
+    if (currentIndex >= reviews.length) {
+      currentIndex = 0;
+    }
+
+    // show next
+    reviews[currentIndex].classList.add("active");
+
+  });
+
+});

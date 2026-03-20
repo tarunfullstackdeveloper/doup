@@ -707,7 +707,7 @@ ul.socialmedia {
 }
 
 .pdinfowrow .pdimage {
-  width: 35%;
+  width: 40%;
 }
 
 .pdinfowrow .pdimage img {
@@ -715,7 +715,7 @@ ul.socialmedia {
 }
 
 .pdinfowrow  .pdcontent {
-  width: 56%;
+  width: 50%;
 }
 
 .pdinfowrow .pdcontent .contentwrapper h1 {
@@ -1089,4 +1089,165 @@ header.siteheader {
 
 .contactrowwrapper .formwrapper:first-child {
   margin-top: 10px;
+}
+.pdsliderwrap {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Thumbnail */
+.pdthumbslider {
+  width: 100px;
+}
+
+.pdthumbslider .slick-slide {
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.pdthumbslider .slick-current {
+  opacity: 1;
+}
+
+.pdthumbslider img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Main Slider */
+.pdimageslider {
+  width: 400px;
+}
+
+.pdimageslider img {
+  width: 100%;
+  border-radius: 20px;
+}
+.pdthumbslide img {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  height: 100%;
+}
+
+.pdthumbslide {
+  height: 80px;
+}
+
+.pdthumbslider .slick-current .pdthumbslide img {
+  background: rgba(61, 84, 77, 0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px;
+}
+
+.reviewsecstart {
+  padding-bottom: 80px;
+}
+
+.reviewsecstart .titlebox h2 {
+  text-align: center;
+}
+
+.reviewcardwrapper .reviewcard {
+    background: rgba(61, 84, 77, 0.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+    margin-bottom: 30px;
+    padding: 24px;
+}
+
+.customerprofiles {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileinfo h6 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.customerprofiles .profileinfo p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customerprofiles .profileinfo p svg {
+    width: 15px;
+}
+
+.reviewcontent {
+    border-top: 2px solid #E8E8E8;
+    padding: 32px 0;
+    margin: 32px 0;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.reviewstar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewstar .date p {
+    font-size: 18px;
+    font-family: 'Gilroy';
+}
+
+.reviewtitle {
+    padding: 40px 0 18px;
+}
+
+.reviewtitle h6 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.reviewtext p {
+    font-size: 17px;
+    margin: 0;
+    max-width: 600px;
+}
+
+.reviewfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usefulshare {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.usefulreview, .sharereview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.readmoreaction {
+    text-align: end;
+}
+
+.readmoreaction a {
+    font-size: 18px;
+}
+.reviewcard {
+  display: none;
+}
+.reviewcard.active {
+  display: block;
+}
+.reviewsecstart .titlebox h2 {
+  margin-bottom: 60px;
 }
