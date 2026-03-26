@@ -156,13 +156,17 @@ $(document).ready(function(){
 });
 
 
-$('.toggle-switch input').on('change', function(){
-  if($(this).is(':checked')){
-    $('.addlogotoggleshow').addClass('active').show();
+$('.toggle-switch input').on('change', function () {
+  let parent = $(this).closest('.addlogotoggle');
+  let target = parent.next('.addlogotoggleshow');
+
+  if ($(this).is(':checked')) {
+    target.addClass('active').slideDown();
   } else {
-    $('.addlogotoggleshow').removeClass('active').hide();
+    target.removeClass('active').slideUp();
   }
 });
+
 $(document).on('click', '.carboxtabs li, .pricecartbox li', function(){
 
     var tabId = $(this).attr('tab-id');
@@ -218,4 +222,16 @@ $(document).ready(function(){
     updateCardName();
   });
 
+});
+
+document.querySelectorAll('.qty').forEach(qtyBox => {
+  const input = qtyBox.querySelector('input');
+
+  qtyBox.querySelectorAll('button')[0].onclick = () => {
+    if (input.value > 1) input.value--;
+  };
+
+  qtyBox.querySelectorAll('button')[1].onclick = () => {
+    input.value++;
+  };
 });

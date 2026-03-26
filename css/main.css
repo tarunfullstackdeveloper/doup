@@ -1683,14 +1683,14 @@ p.formnote {
     -2px -2px 6px rgba(255,255,255,0.2);
 }
 /* Checked state */
-input:checked + .slider {
+.toggle-switch > input:checked + .slider {
   background: linear-gradient(145deg, #ffffff, #ffffff);
 }
 /* Move knob */
-input:checked + .slider::before {
+.toggle-switch > input:checked + .slider::before {
   transform: translateX(26px);
 }
-input:checked + .slider::before {
+.toggle-switch > input:checked + .slider::before {
   background: #4E4E4E;
   box-shadow: 0 0 10px rgba(255,255,255,0.6);
 }
@@ -1773,4 +1773,85 @@ span.cardname.metal-card {
 
 .image-radio input:checked + .card img {
   filter: brightness(1);
+}
+.cart-table {
+  width: 100%;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Header */
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Row */
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Product */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #2a2a2a;
+}
+
+.details .title {
+  font-weight: 600;
+}
+
+.details .desc {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* Quantity */
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #111;
+  padding: 6px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.qty button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty input {
+  width: 30px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+/* Price */
+.price,
+.total {
+  font-size: 14px;
 }
