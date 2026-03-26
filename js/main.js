@@ -163,21 +163,59 @@ $('.toggle-switch input').on('change', function(){
     $('.addlogotoggleshow').removeClass('active').hide();
   }
 });
-$('.carboxtabs li, .pricecartbox li').click(function(){
+$(document).on('click', '.carboxtabs li, .pricecartbox li', function(){
 
     var tabId = $(this).attr('tab-id');
 
-    // Dono lists se active hatao
-    $('.carboxtabs li, .pricecartbox li').removeClass('active');
+    // REAL current slide (clones ignore)
+    var currentSlide = $(this).closest('.slick-slide');
 
-    // Same tab-id wale dono elements ko active karo
-    $('.carboxtabs li[tab-id="'+tabId+'"], .pricecartbox li[tab-id="'+tabId+'"]')
-      .addClass('active');
+    // Agar cloned slide hai toh original find karo
+    if(currentSlide.hasClass('slick-cloned')){
+        var index = currentSlide.data('slick-index');
+        currentSlide = $('.designyourplastictabcontentslider .slick-slide[data-slick-index="'+index+'"]:not(.slick-cloned)');
+    }
 
-    // Content hide
-    $('#' + tabId).removeClass('active').hide();
+    // Active remove (sirf isi slide me)
+    currentSlide.find('.carboxtabs li, .pricecartbox li').removeClass('active');
 
-    // Content show
-    $('#' + tabId).addClass('active').show();
+    // Dono tabs sync active
+    currentSlide.find('.carboxtabs li[tab-id="'+tabId+'"], .pricecartbox li[tab-id="'+tabId+'"]')
+        .addClass('active');
+
+    // Sab content hide (isi slide me)
+    currentSlide.find('.noncustomizeablecards')
+        .removeClass('active')
+        .hide();
+
+    // Sirf selected show (IMPORTANT: children use karo, global ID nahi)
+    currentSlide.find('.noncustomizeablecards').each(function(){
+        if($(this).attr('id') === tabId){
+            $(this).addClass('active').show();
+        }
+    });
+
+});
+
+$(document).ready(function(){
+
+  function updateCardName() {
+    var text = $('.designyourplastictabsthumbnails .slick-current h6').text().trim();
+
+    // text update
+    $('.cardname').text(text);
+
+    // class update (text ko class format me convert karke)
+    $('.cardname')
+      .attr('class', 'cardname ' + text.toLowerCase().replace(/\s+/g, '-'));
+  }
+
+  // Page load pe
+  updateCardName();
+
+  // Slider change pe
+  $('.designyourplastictabsthumbnails').on('afterChange', function(){
+    updateCardName();
+  });
 
 });

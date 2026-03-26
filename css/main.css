@@ -1708,3 +1708,12 @@ input:checked + .slider::before {
 .inputfield select option {
   color: #000;
 }
+span.cardname.metal-card {
+  font-weight: 700;
+
+  background: url('../img/cardbg.png') no-repeat center;
+  background-size: cover;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
