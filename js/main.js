@@ -163,3 +163,21 @@ $('.toggle-switch input').on('change', function(){
     $('.addlogotoggleshow').removeClass('active').hide();
   }
 });
+$('.carboxtabs li, .pricecartbox li').click(function(){
+
+    var tabId = $(this).attr('tab-id');
+
+    // Dono lists se active hatao
+    $('.carboxtabs li, .pricecartbox li').removeClass('active');
+
+    // Same tab-id wale dono elements ko active karo
+    $('.carboxtabs li[tab-id="'+tabId+'"], .pricecartbox li[tab-id="'+tabId+'"]')
+      .addClass('active');
+
+    // Content hide
+    $('.noncustomizeablecards').removeClass('active').hide();
+
+    // Content show
+    $('#' + tabId).addClass('active').show();
+
+});
