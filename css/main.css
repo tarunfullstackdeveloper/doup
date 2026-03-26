@@ -1251,3 +1251,460 @@ header.siteheader {
 .reviewsecstart .titlebox h2 {
   margin-bottom: 60px;
 }
+.upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* background: #0e0e0e; */
+  padding: 20px;
+}
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 1px solid #555;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  border-color: #aaa;
+}
+
+.upload-btn .icon {
+  font-size: 18px;
+}
+
+#fileName {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.designyourplasticcard .titlebox {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.designyourplasticcard .titlebox h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 1.80px;
+  word-wrap: break-word;
+  margin-bottom: 14px;
+}
+
+.designyourplasticcard h1 span.cardname {
+  color: rgba(255, 255, 255, 0.20);
+}
+
+.designyourplasticcard .titlebox p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.designyourplastictabsthumbnails button.slick-arrow:before {
+  display: none;
+}
+
+.designyourplastictabsthumbnails button.slick-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.designyourplastictabsthumbnails button.slick-arrow {
+  width: 67px;
+  height: 67px;
+  top: 0;
+  transform: none;
+}
+
+.designyourplastictabsthumbnails {
+  border-radius: 80px;
+  border-left: 1px #ffffff3b solid;
+  border-right: 1px #ffffff3b solid;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  padding: 0 72px;
+  position: relative;
+  margin-bottom: 86px;
+}
+
+.designyourplastictabsthumbnails .prev-arrow {
+  left: -2px;
+}
+
+.designyourplastictabsthumbnails .next-arrow {
+  right: -2px;
+}
+
+.thumbnailslide h6 {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 21.50px;
+  padding-bottom: 21.50px;
+  background: rgba(255, 255, 255, 0.10);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.customizedandnontab ul.carboxtabs {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.customizedandnontab.btnbox {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.customizedandnontab ul.carboxtabs li a {
+  font-size: 20px;
+  padding: 21px 60px;
+  line-height: 35px;
+  letter-spacing: 0.60px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customizedandnontab ul.carboxtabs li a svg {
+  width: 25px;
+}
+.customizedandnontab ul.carboxtabs li.active a {
+  background: rgba(255, 255, 255, 0.10);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.customizedandnontab ul.carboxtabs.pricecartbox li.active a {
+  border-top-left-radius: 60px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 120px;
+}
+.customizedandnontab ul.carboxtabs li:last-child.active a {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 35px;
+}
+.customizedandnontab ul.carboxtabs.pricecartbox li:last-child.active a {
+  border-top-left-radius: 0;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 100px;
+}
+.noncustomizeablecardsrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.noncustomizeablecardsrow .col-image {
+  width: 45%;
+}
+
+.noncustomizeablecardsrow .col-image .image {
+  position: relative;
+}
+
+.noncustomizeablecardsrow .col-image .image img {
+  width: 100%;
+}
+
+.noncustomizeablecardsrow .col-image .image a.refreshicon {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+p.tabcard {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.30);
+  font-size: 18px;
+}
+
+p.tabcard svg {
+  width: 40px;
+  height: 26px;
+}
+
+.col-info {
+  width: 50%;
+}
+.infocustomizecard {
+    padding: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+}
+
+.infocustomizecard h6 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0.90px;
+    margin-bottom: 34px;
+}
+
+.infocustomizecard .label {
+    display: flex;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.infocustomizecard .label.ccm {
+    color: #fff;
+    margin-top: 0px;
+}
+
+.inputfield select, .inputfield input {
+    color: white;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    background: transparent;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+}
+.inputfield textarea {
+    color: white;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    background: transparent;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+    height: 200px;
+}
+.nameyourcardinput {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.nameyourcard {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.cardphtoto {
+    width: 120px;
+    height: 74px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 9.54px;
+}
+
+.nameyourcard input {
+  color: rgba(255, 255, 255, 0.20);
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  border: none;
+  height: 30px;
+  background: transparent;
+  border-bottom: 1px  solid;
+}
+p.formnote {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 12px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  padding: 0 30px;
+}
+.infocustomizecard button.btn.outlinebtn {
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+}
+.totalcardprice {
+  padding: 20px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.totalcardprice ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalcardprice ul li strong {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.totalcardprice ul li span {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.totalcardprice ul li h6 {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.totalcardprice ul li h4, .totalcardprice ul li  span.ttpp {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.totalcardprice ul li:first-child {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+}
+.infocustomizecard .label .icon {
+  width: 20px;
+}
+.totalcardprice ul {
+  padding: 0;
+}
+.addlogotoggleshow {
+  display: none;
+}
+.addlogotoggleshow img {
+  width: 100%;
+}
+.customizedandnontab ul.carboxtabs.pricecartbox li a {
+  padding: 21px 60px;
+  width: 240px;
+}
+
+.customizedandnontab ul.carboxtabs.pricecartbox {
+  position: relative;
+  left: 20px;
+}
+.designyourplastictabcontentslider {
+  padding-bottom: 120px;
+}
+.addlogotoggle h6 {
+  padding: 15px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.6),
+              inset -5px -5px 10px rgba(255,255,255,0.05);
+}
+/* Circle knob */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  top: 5px;
+  background: #cfcfcf;
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 
+    4px 4px 8px rgba(0,0,0,0.6),
+    -2px -2px 6px rgba(255,255,255,0.2);
+}
+/* Checked state */
+input:checked + .slider {
+  background: linear-gradient(145deg, #4a4a4a, #222);
+}
+/* Move knob */
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+input:checked + .slider::before {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+.addlogotoggleshow.active {
+  display: block;
+}
+.inputfield select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+.inputfield select option {
+  color: #000;
+}

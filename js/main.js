@@ -93,3 +93,73 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+
+const input = document.getElementById("logoUpload");
+const fileName = document.getElementById("fileName");
+
+input.addEventListener("change", function () {
+  fileName.textContent = this.files[0]
+    ? this.files[0].name
+    : "No file chosen";
+});
+
+
+
+$(document).ready(function(){
+
+  // Main slider
+  $('.designyourplastictabcontentslider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.designyourplastictabsthumbnails'
+  });
+
+  // Thumbnail slider with custom arrows
+  $('.designyourplastictabsthumbnails').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.designyourplastictabcontentslider',
+    dots: false,
+    focusOnSelect: true,
+
+    prevArrow: `<button class="slick-prev custom-arrow prev-arrow">
+      <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect opacity="0.1" width="67" height="67" rx="33.5" fill="url(#paint0_linear)"/>
+        <path d="M38 24L28 34L38 44" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+        <defs>
+          <linearGradient id="paint0_linear" x1="67" y1="0" x2="36.4061" y2="80.7869" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#999999"/>
+            <stop offset="1" stop-color="#141414"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </button>`,
+
+    nextArrow: `<button class="slick-next custom-arrow next-arrow">
+      <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+        <rect opacity="0.1" width="67" height="67" rx="33.5" fill="url(#paint0_linear2)"/>
+        <path d="M38 24L28 34L38 44" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+        <defs>
+          <linearGradient id="paint0_linear2" x1="67" y1="0" x2="36.4061" y2="80.7869" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#999999"/>
+            <stop offset="1" stop-color="#141414"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </button>`
+  });
+
+});
+
+
+$('.toggle-switch input').on('change', function(){
+  if($(this).is(':checked')){
+    $('.addlogotoggleshow').addClass('active').show();
+  } else {
+    $('.addlogotoggleshow').removeClass('active').hide();
+  }
+});
