@@ -1706,7 +1706,9 @@ input:checked + .slider::before {
   background-position: 96% 50%;
 }
 .inputfield select option {
-  color: #000;
+  color: rgba(255, 255, 255, 0.50);
+  background: #323939;
+  border: none;
 }
 span.cardname.metal-card {
   font-weight: 700;
