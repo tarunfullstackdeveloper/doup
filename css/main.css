@@ -1786,8 +1786,11 @@ span.cardname.metal-card {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   padding: 12px 0;
   border-bottom: 1px solid rgba(255,255,255,0.2);
-  font-size: 14px;
-  opacity: 0.7;
+  font-size: 20px;
+  opacity: 1;
+  color: #fff;
+  font-family: Gilroy;
+  font-weight: bold;
 }
 
 /* Row */
@@ -1807,7 +1810,7 @@ span.cardname.metal-card {
 }
 
 .product-info img {
-  width: 70px;
+  width: 125px;
   height: 70px;
   border-radius: 10px;
   object-fit: cover;
@@ -1819,19 +1822,23 @@ span.cardname.metal-card {
 }
 
 .details .desc {
-  font-size: 13px;
-  opacity: 0.7;
+  font-size: 18px;
+  font-family: Gilroy;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  color: #fff;
 }
 
 /* Quantity */
-.qty {
+.table-row .qty {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #111;
+  background: #181a19;
   padding: 6px 10px;
   border-radius: 20px;
   width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .qty button {
@@ -1842,16 +1849,246 @@ span.cardname.metal-card {
   cursor: pointer;
 }
 
-.qty input {
-  width: 30px;
-  text-align: center;
-  background: transparent;
-  border: none;
-  color: #fff;
+.table-row .qty input {
+    width: 35px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    left: 7px;
+    position: relative;
 }
 
 /* Price */
-.price,
-.total {
-  font-size: 14px;
+.table-row .price,
+.table-row .total {
+  font-size: 18px;
+  font-family: Gilroy;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+}
+
+.orderconfirmationinner {
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.orderconfirmationsec {
+  padding: 110px 0;
+}
+
+.orderconfirmationinner h1 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.90px;
+  margin-bottom: 24px;
+  word-spacing: normal;
+}
+
+.headerwrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  padding: 78px 78px 0;
+}
+
+.orderconfirmationinner .heading p {
+  color: white;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  word-wrap: break-word;
+}
+
+.orderconfirmationmiddle {
+  border: 1px rgba(151, 156, 155, 0.50) solid;
+  padding: 48px 78px;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.orderconfirmationmiddle .middleboxthird {
+  width: calc(100% / 3.8);
+}
+
+.orderconfirmationmiddle .middleboxthird h6 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.90px;
+  margin-bottom: 30px;
+}
+
+.orderconfirmationmiddle .middleboxthird p {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  margin-bottom: 14px;
+}
+
+.orderconfirmationmiddle .middleboxthird p strong {
+  color: #fff;
+  display: block;
+}
+
+.ordersummary {
+  padding: 48px 78px;
+}
+
+.shippingandpaymentsummary {
+  padding: 48px 78px;
+}
+
+.thankyouyourorder {
+  overflow: hidden;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.10);
+  padding: 48px 78px;
+}
+
+.thankyouyourorder h3 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 1.20px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.thankyouyourorder p {
+  color: white;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.thankyouyourorderinner hr {
+  margin: 30px 0;
+}
+
+.thankyouyourorderinner .col-third {
+  width: 30%;
+}
+
+.thankyouyourorderinner row {
+  justify-content: space-between;
+}
+
+.thankyouyourorderinner .thankyoutext h6 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.72px;
+  margin-bottom: 12px;
+}
+
+.thankyouyourorderinner .thankyoutext p {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.thankyouyourorderinner .thankyoutext a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  line-height: 35px;
+  letter-spacing: 0.60px;
+}
+.ordersummary {
+  border-bottom: 1px rgba(151, 156, 155, 0.50) solid;
+}
+.shipandpaybox h6 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.90px;
+    margin-bottom: 48px;
+}
+
+.shipandpayboxinner {
+    padding: 22px 30px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.shippingandpaymentsummary .row {
+    justify-content: space-between;
+}
+
+.shipandpayboxinner ul {
+    padding: 0;
+}
+
+.shipandpayboxinner ul li {
+    margin-bottom: 18px;
+}
+
+.shipandpayboxinner ul li p {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.72px;
+}
+
+.shipandpayboxinner ul li p span.amount {
+    color: white;
+    font-size: 24px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.72px;
+}
+
+h6.estimatetime {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.ordersummaryinner h4 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.90px;
+  margin-bottom: 40px;
+}
+.shipandpayboxinner ul li.grandtotal {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
 }
