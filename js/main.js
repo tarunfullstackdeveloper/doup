@@ -175,7 +175,7 @@ $('.carboxtabs li, .pricecartbox li').click(function(){
       .addClass('active');
 
     // Content hide
-    $('.noncustomizeablecards').removeClass('active').hide();
+    $('#' + tabId).removeClass('active').hide();
 
     // Content show
     $('#' + tabId).addClass('active').show();
