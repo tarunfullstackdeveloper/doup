@@ -1520,6 +1520,7 @@ p.tabcard svg {
     display: flex;
     gap: 20px;
     align-items: center;
+    width: 100%;
 }
 .cardphtoto {
     width: 120px;
