@@ -506,7 +506,7 @@ span.themecolor {
 
 .popularpdcontent h6.price {
   font-size: 30px;
-  margin-bottom: 30px;
+/*  margin-bottom: 30px;*/
 }
 .howdoesworksec {
   padding: 20px 0;
@@ -2092,4 +2092,50 @@ h6.estimatetime {
     margin-bottom: 0px;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.50);
+}
+.cardstabcontent {
+  display: none;
+}
+.cardboxtabs ul {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto 68px;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  padding: 0;
+  overflow: hidden;
+}
+.cardboxtabs ul li a {
+  font-size: 20px;
+  padding: 21px 60px;
+  line-height: 35px;
+  letter-spacing: 0.60px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  gap: 10px;
+}
+.cardstabcontent.active {
+  display: block !important;
+}
+.cardboxtabs ul li.active a {
+  background: rgba(255, 255, 255, 0.10);
+}
+.cardimagecustomize a.btn.outlinebtn {
+  margin: 30px auto !important;
+  justify-content: center;
+}
+.cardimagecustomize {
+  text-align: center;
+}
+.nameyourcard input:focus {
+  outline: none;
+}
+.nameyourcard input {
+  color: #fff;
 }
